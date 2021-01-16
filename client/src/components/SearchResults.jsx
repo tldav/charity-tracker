@@ -35,7 +35,6 @@ const SearchResults = (props) => {
 						about: charity.tagLine,
 						showEdit: false
 					};
-					console.log(charity);
 					return (
 						<CharityCard
 							charity={charityObj}

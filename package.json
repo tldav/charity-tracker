@@ -4,26 +4,26 @@
 	"description": "",
 	"main": "server.js",
 	"dependencies": {
-		"@material-ui/icons": "^4.9.1",
-		"@material-ui/styles": "^4.10.0",
-		"axios": "^0.18.0",
+		"@material-ui/icons": "^4.11.2",
+		"@material-ui/styles": "^4.11.2",
+		"axios": "^0.21.1",
 		"bcrypt": "^5.0.0",
-		"chart.js": "^2.9.3",
-		"clsx": "^1.1.0",
+		"chart.js": "^2.9.4",
+		"clsx": "^1.1.1",
+		"concurrently": "^5.3.0",
 		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
 		"if-env": "^1.0.4",
-		"mongoose": "^5.3.16",
+		"mongoose": "^5.11.11",
 		"morgan": "^1.10.0",
 		"prop-types": "^15.7.2",
-		"react-chartjs-2": "^2.9.0",
+		"react-chartjs-2": "^2.11.1",
 		"react-text-mask": "^5.4.3",
 		"request": "^2.88.2"
 	},
 	"devDependencies": {
-		"concurrently": "^4.1.0",
-		"nodemon": "^1.18.7",
-		"dotenv": "^8.2.0"
+		"dotenv": "^8.2.0",
+		"nodemon": "^1.18.7"
 	},
 	"scripts": {
 		"start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev && NODE_ENV=dev",
