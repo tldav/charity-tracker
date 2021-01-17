@@ -273,9 +273,6 @@ function OrgPage() {
 			/>
 			<br />
 			<br />
-
-			<h5>Upcoming Events: ((calendar??))</h5>
-			<br />
 			<br />
 
 			<h5>
