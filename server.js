@@ -6,7 +6,6 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 const DB_NAME = process.env.DB_NAME;
-const USERNAME_PASSWORD_CLUSTER = process.env.USERNAME_PASSWORD_CLUSTER;
 
 // Define middleware here
 app.use((req, res, next) => {
@@ -24,7 +23,6 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-// const connection = `mongodb+srv://${USERNAME_PASSWORD_CLUSTER}/${DB_NAME}?retryWrites=true&w=majority`;
 mongoose
 	.connect(process.env.MONGODB_URI || `mongodb://localhost/${DB_NAME}`, {
 		useNewUrlParser: true,
