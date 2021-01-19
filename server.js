@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const DB_NAME = process.env.DB_NAME;
 
-// Define middleware here
+// Define middleware here.
 app.use((req, res, next) => {
 	res.header("Access-Control-Allow-Origin", "https://localhost/3000");
 	next();
